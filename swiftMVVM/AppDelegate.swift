@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  swiftMVVM
-//
-//  Created by Vingle on 2017. 4. 12..
-//  Copyright © 2017년 GeekTree. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
@@ -16,6 +8,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        window = UIWindow(frame: UIScreen.main.bounds)
+        guard let window = self.window else { return false }
+        
+        let mvvmMainController: UIViewController = MvvmMainController()
+        window.rootViewController = mvvmMainController
+        window.makeKeyAndVisible()
+        
         return true
     }
 
