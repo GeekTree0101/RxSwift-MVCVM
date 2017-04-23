@@ -14,6 +14,10 @@
 		9B13C59B1E9E56950093BB79 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 9B13C59A1E9E56950093BB79 /* Podfile */; };
 		9B13C59D1E9E578C0093BB79 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B13C59C1E9E578C0093BB79 /* Country.swift */; };
 		9B13C59F1E9E5ABF0093BB79 /* Country+Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B13C59E1E9E5ABF0093BB79 /* Country+Network.swift */; };
+		9B1536691EA0F842006562CA /* mvvmTestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1536681EA0F842006562CA /* mvvmTestModel.swift */; };
+		9B15366B1EA0F974006562CA /* mvvmTestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B15366A1EA0F974006562CA /* mvvmTestViewModel.swift */; };
+		9B15366D1EA0FB33006562CA /* mvvmTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B15366C1EA0FB33006562CA /* mvvmTestView.swift */; };
+		9B15366F1EA0FB3E006562CA /* mvvmTestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B15366E1EA0FB3E006562CA /* mvvmTestView.xib */; };
 		9B1678EA1E9E4E7700FF94DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1678E91E9E4E7700FF94DC /* AppDelegate.swift */; };
 		9B1678F11E9E4E7700FF94DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B1678F01E9E4E7700FF94DC /* Assets.xcassets */; };
 		9B1678FF1E9E4E7700FF94DC /* swiftMVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1678FE1E9E4E7700FF94DC /* swiftMVVMUITests.swift */; };
@@ -39,6 +43,10 @@
 		9B13C59A1E9E56950093BB79 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9B13C59C1E9E578C0093BB79 /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		9B13C59E1E9E5ABF0093BB79 /* Country+Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Country+Network.swift"; sourceTree = "<group>"; };
+		9B1536681EA0F842006562CA /* mvvmTestModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mvvmTestModel.swift; sourceTree = "<group>"; };
+		9B15366A1EA0F974006562CA /* mvvmTestViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mvvmTestViewModel.swift; sourceTree = "<group>"; };
+		9B15366C1EA0FB33006562CA /* mvvmTestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mvvmTestView.swift; sourceTree = "<group>"; };
+		9B15366E1EA0FB3E006562CA /* mvvmTestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = mvvmTestView.xib; sourceTree = "<group>"; };
 		9B1678E61E9E4E7700FF94DC /* swiftMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B1678E91E9E4E7700FF94DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B1678F01E9E4E7700FF94DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -84,6 +92,7 @@
 			children = (
 				9B13C59C1E9E578C0093BB79 /* Country.swift */,
 				9B13C59E1E9E5ABF0093BB79 /* Country+Network.swift */,
+				9B1536681EA0F842006562CA /* mvvmTestModel.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -92,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				9B4F072A1E9E82F200A2AABC /* interestCountryViewModel.swift */,
+				9B15366A1EA0F974006562CA /* mvvmTestViewModel.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -101,6 +111,8 @@
 			children = (
 				9B13C5931E9E539B0093BB79 /* interestCountryView.swift */,
 				9B13C5951E9E53A80093BB79 /* interestCountryView.xib */,
+				9B15366C1EA0FB33006562CA /* mvvmTestView.swift */,
+				9B15366E1EA0FB3E006562CA /* mvvmTestView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -263,6 +275,7 @@
 			files = (
 				9B13C5961E9E53A80093BB79 /* interestCountryView.xib in Resources */,
 				9B13C59B1E9E56950093BB79 /* Podfile in Resources */,
+				9B15366F1EA0FB3E006562CA /* mvvmTestView.xib in Resources */,
 				9B1678F11E9E4E7700FF94DC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,11 +343,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B13C59D1E9E578C0093BB79 /* Country.swift in Sources */,
+				9B15366D1EA0FB33006562CA /* mvvmTestView.swift in Sources */,
 				9B4F072B1E9E82F200A2AABC /* interestCountryViewModel.swift in Sources */,
 				9B13C5941E9E539B0093BB79 /* interestCountryView.swift in Sources */,
 				9B16790B1E9E4EB700FF94DC /* MvvmMainController.swift in Sources */,
 				9B13C5991E9E56290093BB79 /* UIView+extension.swift in Sources */,
+				9B1536691EA0F842006562CA /* mvvmTestModel.swift in Sources */,
 				9B1678EA1E9E4E7700FF94DC /* AppDelegate.swift in Sources */,
+				9B15366B1EA0F974006562CA /* mvvmTestViewModel.swift in Sources */,
 				9B13C59F1E9E5ABF0093BB79 /* Country+Network.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
